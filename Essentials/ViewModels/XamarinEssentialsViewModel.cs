@@ -1,14 +1,16 @@
 ﻿namespace Essentials.ViewModels
 {
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
     using System.Windows.Input;
     using Essentials.Views;
     using Xamarin.Essentials;
     using Xamarin.Forms;
 
-    public class XamarinEssentialsViewModel
+    public class XamarinEssentialsViewModel : BindableObject
     {
         private string _onSelectedItem { get; set; }
+        private ObservableCollection<string> _xamarinEssential;
 
         public string OnSelectedItem
         {
@@ -21,7 +23,16 @@
             }
         }
 
-        public ObservableCollection<string> XamarinEssential { get; set;}
+        public ObservableCollection<string> XamarinEssential
+        {
+            get => _xamarinEssential;
+            set
+            {
+                _xamarinEssential = value;
+                OnPropertyChanged();
+            }
+        }
+
 
         #region App Information
 
@@ -111,10 +122,13 @@
 
         public void Initialize()
         {
-            XamarinEssential = new ObservableCollection<string>();
+            List<string> xamarinEssential = new List<string>
+            {
+                "App Information",
+                "Battery"
+            };
 
-            XamarinEssential.Add("App Information");
-            XamarinEssential.Add("Battery");
+            XamarinEssential = new ObservableCollection<string>(xamarinEssential);
         }
 
         private async void ShowView()

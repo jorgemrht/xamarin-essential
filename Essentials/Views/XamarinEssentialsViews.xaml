@@ -5,7 +5,7 @@
              Title="App information view">
     <ContentPage.Content>
       <ListView
-            SelectedItem="{Binding OnSelectedItem}"
+            SelectedItem="{Binding OnSelectedItem, Mode=TwoWay}"
             ItemsSource="{Binding XamarinEssential}">
         <ListView.ItemTemplate>
           <DataTemplate>
