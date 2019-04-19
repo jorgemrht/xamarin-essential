@@ -1,7 +1,17 @@
 # XamarinEssential
 
 
-# WebServices
+## Android
+
+<img src="https://github.com/jorgemht/XamarinEssential/blob/master/Samples/Android.png" height="600" width="360">
+
+[Vídeo demo in Android](https://youtu.be/qC4drtaTFgA)
+
+## iOS
+
+<img src="https://github.com/jorgemht/XamarinEssential/blob/master/Samples/iOS.png" height="600" width="360">
+
+[Vídeo demo in iOS](https://youtu.be/2y3M3OCdflQ)
 
 # Tools used
 * [Visual Studio for mac and windows](https://visualstudio.microsoft.com)
@@ -15,7 +25,7 @@
 
 This project uses some third-party assets with a license that requires attribution:
 
-- [Xamarin.Essentials ](https://www.nuget.org/packages/Xamarin.Essentials) : by James Montemagno
+- [Xamarin.Essentials](https://www.nuget.org/packages/Xamarin.Essentials) : by James Montemagno
   
 # Clean and Rebuild
 
