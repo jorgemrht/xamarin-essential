@@ -3,9 +3,9 @@
     using Essentials.ViewModels;
     using Xamarin.Forms;
 
-    public partial class OpenBrowser : ContentPage
+    public partial class OpenBrowserView : ContentPage
     {
-        public OpenBrowser()
+        public OpenBrowserView()
         {
             InitializeComponent();
             BindingContext = new XamarinEssentialsViewModel();
