@@ -7,7 +7,7 @@
 
 [Vídeo demo in Android](https://youtu.be/qC4drtaTFgA)
 
-## iOS
+## iOS 
 
 <img src="https://github.com/jorgemht/XamarinEssential/blob/master/Samples/iOS.png" height="600" width="360">
 
